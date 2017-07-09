@@ -1,0 +1,26 @@
+{
+  "destination_addresses": [
+    "Vaudreuil-Dorion, QC, Canada"
+  ],
+  "origin_addresses": [
+    "Montreal, QC, Canada"
+  ],
+  "rows": [
+    {
+      "elements": [
+        {
+          "distance": {
+            "text": "44.5 km",
+            "value": 44497
+          },
+          "duration": {
+            "text": "35 mins",
+            "value": 2119
+          },
+          "status": "OK"
+        }
+      ]
+    }
+  ],
+  "status": "OK"
+}
