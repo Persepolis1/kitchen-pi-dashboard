@@ -58,8 +58,4 @@ typings/
 
 # dotenv environment variables file
 /server/*.env
-
-
-.gitignore
 .idea/
-!/.gitignore
