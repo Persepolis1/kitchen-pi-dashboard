@@ -1,1 +1,8 @@
-console.log('If you see this, then webpack is working! Les sigh de mon sigh');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './theme.styl';
+
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById('root-container')
+);
