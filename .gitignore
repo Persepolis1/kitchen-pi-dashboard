@@ -60,3 +60,4 @@ typings/
 /server/*.env
 .idea/
 /server/*.json
+/server/data.json
