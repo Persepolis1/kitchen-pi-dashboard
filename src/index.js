@@ -1,0 +1,1 @@
+console.log('If you see this, then webpack is working! Les sigh de mon sigh');
