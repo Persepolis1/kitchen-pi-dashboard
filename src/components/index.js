@@ -1,10 +1,34 @@
 import React, { Component } from 'react';
-import "./theme.styl"
+import "./theme.styl";
+
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
+
   render() {
     return (
       <div>
-        <h2>Setting up react and redux</h2>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
       </div>
     );
   }
