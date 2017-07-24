@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './theme.styl';
+import { Provider } from 'react-redux';
+import { Route, BrowserRouter } from 'react-router-dom';
+import configureStore from './store/index';
+import App from "./components/index";
 
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root-container')
-);
+const store = configureStore();
+
+ReactDOM.render (
+  <Provider store={store}>
+    <BrowserRouter>
+      <div>
+        <Route path="/" component={App}/>
+      </div>
+    </BrowserRouter>
+  </Provider>
+  , document.querySelector('.root-container'));
