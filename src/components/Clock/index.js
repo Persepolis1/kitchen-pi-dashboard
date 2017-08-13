@@ -11,7 +11,7 @@ export default class Clock extends Component{
   componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
-      30000
+      1000
     );
   }
 
@@ -31,7 +31,8 @@ export default class Clock extends Component{
         <div className="clock-date">
           <h1>{getDayToString(this.state.date.getDay())}, {getMonthToString(this.state.date.getMonth())} {this.state.date.getDate()}</h1>
         </div>
-        <div className="clock-time">
+        <div className="clock-time" >
+          <i className="fa fa-clock-o"></i>
           <h1>{this.state.date.toLocaleString('en-US', { hour: 'numeric',minute:'numeric', hour12: true })}</h1>
         </div>
       </div>
