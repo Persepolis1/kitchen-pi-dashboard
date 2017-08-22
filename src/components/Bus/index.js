@@ -12,9 +12,9 @@ export default class Bus extends Component{
         <h1>There are no more buses schedule to leave today</h1>
       );
     }
-    return busDates.map((busDates,index) => {
+    return busDates.map((busDate,index) => {
       return(
-        <h1 key={index}>{busDates}</h1>
+        <h1 key={index}>{busDate}</h1>
       );
     });
   }

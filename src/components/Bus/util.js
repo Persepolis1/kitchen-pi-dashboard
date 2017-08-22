@@ -1,4 +1,5 @@
 import {busData} from '../../constants/cit';
+import {trainData} from "../../constants/amt";
 
 function getAllBusTimes(location) {
   let date = new Date();

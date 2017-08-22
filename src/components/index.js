@@ -3,6 +3,7 @@ import "./theme.styl";
 import Clock from "./Clock/index";
 import Weather from "./Weather/index";
 import Bus from "./Bus/index";
+import Train from "./Train/index";
 
 export default class App extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class App extends Component {
         <Clock/>
         <Weather/>
         <Bus/>
+        <Train/>
       </div>
     );
   }
