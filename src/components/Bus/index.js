@@ -6,7 +6,7 @@ export default class Bus extends Component{
 
   //To be optimized
   getBusTimes(location){
-    let busDates = getNextBuses(location);
+    let busDates = getNextBuses(location,"bus");
     if (busDates.length === 0){
       return(
         <h1>There are no more buses schedule to leave today</h1>
