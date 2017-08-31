@@ -1,21 +1,17 @@
 import "./bus.styl";
 import React,{Component} from "react";
 import Transit from "../index";
+import Box from "../../Box/index";
 
 export default class Bus extends Component{
   render(){
     return(
-      <div className="bus-container">
-        <div className="bus-title"></div>
-        <div className="bus-time bus-first">
-          <h1>Vaudreuil</h1>
-          <Transit location="vaudreuil" type="bus"/>
-        </div>
-        <div className="bus-time bus-second">
-          <h1>Cote Vertu</h1>
-          <Transit location="coteVertu" type="bus"/>
-        </div>
-      </div>
+      <Box title={"A-40 Bus"} icon={"bus"}>
+        <p>Vaudreuil</p>
+        <Transit location={"vaudreuil"} type={"bus"}/>
+        <p>Cote-Vertu</p>
+        <Transit location={"coteVertu"} type={"bus"}/>
+      </Box>
     );
   };
 }
