@@ -1,5 +1,6 @@
 import "./Weather.styl";
 import React,{Component} from "react";
+import Box from "../Box/index";
 export default class Weather extends Component{
   constructor(props){
     super(props);
@@ -10,9 +11,9 @@ export default class Weather extends Component{
   }
   render(){
     return(
-      <div>
-        <h1>weather</h1>
-      </div>
+      <Box title={'Weather'} icon={'cloud'}>
+        <p>Weather goes here</p>
+      </Box>
     );
   }
 }

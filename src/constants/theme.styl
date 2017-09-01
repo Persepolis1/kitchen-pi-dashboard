@@ -3,11 +3,22 @@ $primary-color = grey;
 $secondary-color = black;
 $tertiary-color = white;
 $primary-font = 'Open Sans';
+$background-url = "https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Pictures-1440p-Download-Free-PIC-WPE007775.jpg";
 //------MIXINS------
-border-radius-corners(location,n){
+
+border-radius-corners(location,n)
   border-{location}-left-radius n
   border-{location}-right-radius n
-}
-h2{
-  color:blue;
-}
+
+absolute-dimensions(height,width)
+  position absolute
+  height height
+  width width
+
+background-picture()
+  background: url($background-url)  no-repeat center center fixed;
+  background-size: cover;
+
+relative-hidden-overflow()
+  overflow hidden
+  position relative
