@@ -5,7 +5,7 @@ import Box from "../../Box/index";
 export default class Train extends Component{
   render(){
     return(
-      <Box title={"Vaudreuil-Hudson"} icon={"subway"}>
+      <Box title={"Vaudreuil-Hudson"} icon={"subway"} type={"train"}>
         <p>Vaudreuil</p>
         <Transit location="vaudreuil" type="train"/>
         <p>Lucien L'Allier</p>

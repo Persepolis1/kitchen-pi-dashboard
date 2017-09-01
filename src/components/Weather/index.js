@@ -11,7 +11,7 @@ export default class Weather extends Component{
   }
   render(){
     return(
-      <Box title={'Weather'} icon={'cloud'}>
+      <Box title={'Weather'} icon={'cloud'} type={"weather"}>
         <p>Weather goes here</p>
       </Box>
     );

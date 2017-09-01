@@ -5,7 +5,7 @@ export default class Box extends Component{
 
   render(){
     return(
-      <div className="box">
+      <div className={`box box-${this.props.type}`}>
         <div className="box-blur"></div>
         <div className="box-header">
           <div className="box-bg"></div>
