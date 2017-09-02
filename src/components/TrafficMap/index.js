@@ -1,8 +1,8 @@
-import './Traffic.styl'
+import './TrafficMap.styl'
 import React,{Component} from "react";
 import Box from "../Box/index";
 
-export default class Traffic extends Component{
+export default class TrafficMap extends Component{
   constructor(){
     super();
   }
