@@ -12,7 +12,7 @@ export default class Transit extends Component{
     }
     return transitDates.map((transitDate,index) => {
       return(
-        <p key={index}>{transitDate}</p>
+        <p key={index} className={"transit-time"}>{transitDate}</p>
       );
     });
   };

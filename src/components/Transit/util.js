@@ -34,6 +34,7 @@ export function getNextTransit(location, type) {
   for (let i = 0; i < parsedTransitTimes.length; i++) {
     if (parsedTransitTimes[i] - time >= 0) {
       results.push(transitTimes[i],transitTimes[i + 1],transitTimes[i + 2]);
+      results = results.filter(Boolean);
       return results;
     }
   }

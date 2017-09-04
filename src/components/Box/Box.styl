@@ -1,10 +1,19 @@
 @import '../../constants/theme.styl';
 .box{
   width:95%;
-  margin:auto;
+  margin-left:27px;
   relative-hidden-overflow()
   margin-bottom: 50px;
   border-radius: 20px;
+  &.box-bus{
+    width:47%;
+    display: inline-block;
+  }
+  &.box-train{
+    width:45.5%;
+    display: inline-block;
+    position:absolute;
+  }
 }
 .box-header{
   display:flex;
@@ -43,4 +52,11 @@
   absolute-dimensions(100%,100%);
   opacity:0.5;
   z-index :-1;
+}
+.transit-time{
+  color: #5d747a;
+  font-weight: bolder;
+  border-bottom : 1px solid;
+  text-align: center;
+  margin : 0 10px 0 10px;
 }

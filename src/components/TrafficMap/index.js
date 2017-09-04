@@ -10,7 +10,7 @@ export default class TrafficMap extends Component{
   }
   componentDidMount(){
     window.initMap = this.initMap.bind(this);
-    this.loadJS('https://maps.googleapis.com/maps/api/js?key=AIzaSyDWJLkLsNWLpDiJBPKaZdZuVLMNka0FAQU&callback=initMap');
+    //this.loadJS('https://maps.googleapis.com/maps/api/js?key=AIzaSyDWJLkLsNWLpDiJBPKaZdZuVLMNka0FAQU&callback=initMap');
   }
   initMap(){
     const map = new google.maps.Map(document.getElementById('map'), {
