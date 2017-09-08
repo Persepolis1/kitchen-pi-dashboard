@@ -6,11 +6,11 @@
   margin-bottom: 50px;
   border-radius: 20px;
   &.box-bus{
-    width:47%;
+    width:25%;
     display: inline-block;
   }
   &.box-train{
-    width:45.5%;
+    width:25%;
     display: inline-block;
     position:absolute;
   }
@@ -26,6 +26,7 @@
     margin-top:auto;
     margin-bottom:auto;
     margin-left:10px;
+    font-size:1.5em;
   }
   p{
     margin-left: 15px;
@@ -37,15 +38,13 @@
     background-color: #ffe9e2;
     border-radius-corners(bottom,20px);
   }
-  p{
-    margin-left: 10px;
-  }
 }
 .box-blur{
   z-index: -100;
   background-picture();
-  absolute-dimensions(125%,106%);
+  absolute-dimensions(125%,219%);
   top:-13%;
+  right: -51%;
   filter: blur(30px);
 }
 .box-bg{
@@ -53,10 +52,25 @@
   opacity:0.5;
   z-index :-1;
 }
+.transit-title{
+  color: #404d51;
+  font-weight:bolder;
+  font-size:13px;
+  margin-left: 10px;
+}
 .transit-time{
   color: #5d747a;
   font-weight: bolder;
   border-bottom : 1px solid;
   text-align: center;
-  margin : 0 10px 0 10px;
+  margin : 0 60px 0 60px;
+}
+.transit-time:last-child{
+  border : 0px;
+}
+.transit-empty{
+  color: #404d51;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
 }

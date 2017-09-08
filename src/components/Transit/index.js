@@ -7,7 +7,7 @@ export default class Transit extends Component{
     let transitDates = getNextTransit(location,type);
     if (transitDates.length === 0){
       return(
-        <p>No more departures for today</p>
+        <p className={"transit-empty"}>No more departures for today</p>
       );
     }
     return transitDates.map((transitDate,index) => {
