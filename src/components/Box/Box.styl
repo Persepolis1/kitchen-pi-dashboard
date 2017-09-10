@@ -19,7 +19,7 @@
   display:flex;
   position: relative;
   .box-bg{
-    background-color:white;
+    background-color:$secondary-color;
     border-radius-corners(top,20px);
   }
   i{
@@ -30,12 +30,13 @@
   }
   p{
     margin-left: 15px;
+    color : $box-title-color;
   }
 }
 .box-body{
   relative-hidden-overflow()
   .box-bg{
-    background-color: #ffe9e2;
+    background-color: $primary-color;
     border-radius-corners(bottom,20px);
   }
 }
@@ -53,13 +54,13 @@
   z-index :-1;
 }
 .transit-title{
-  color: #404d51;
+  color: $transit-title-color;
   font-weight:bolder;
   font-size:13px;
   margin-left: 10px;
 }
 .transit-time{
-  color: #5d747a;
+  color: $transit-time-color;
   font-weight: bolder;
   border-bottom : 1px solid;
   text-align: center;
