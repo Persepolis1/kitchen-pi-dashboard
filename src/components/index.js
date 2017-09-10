@@ -5,6 +5,7 @@ import Weather from "./Weather/index";
 import Bus from "./Transit/Bus/index";
 import Train from "./Transit/Train/index";
 import TrafficMap from "./TrafficMap/index";
+import DrivingTime from "./DrivingTime/index";
 
 export default class App extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class App extends Component {
         <Weather/>
         <Bus/>
         <Train/>
+        <DrivingTime/>
         <TrafficMap/>
       </div>
     );
