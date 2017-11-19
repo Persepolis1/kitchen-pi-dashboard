@@ -1,7 +1,7 @@
 const request = require('request');
 const jsonFile = require('jsonfile');
 const Twitter = require('twitter');
-require('dotenv').config({path: 'secrets.env'});
+require('dotenv').config({path: '.env'});
 
 let twitterClient = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,

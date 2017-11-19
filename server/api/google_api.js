@@ -1,4 +1,4 @@
-require('dotenv').config({path: 'secrets.env'});
+require('dotenv').config();
 const jsonFile = require('jsonfile');
 const request = require('request');
 const key = process.env.MAP_MATRIX_API_KEY;

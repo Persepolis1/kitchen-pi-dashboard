@@ -13,7 +13,7 @@ const socket = require('socket.io');
 const app = express();
 const port = 1337;
 
-//weatherAPI('data.json');
+weatherAPI('./weather.json');
 //googleMatrixApi('mapMatrix.json');
 //twitterApi('twitterData.json');
 
@@ -26,9 +26,14 @@ const middleware = webpackMiddleware(compiler, {
 
 app.use(middleware);
 
-app.get('*', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, '../src/index.html'));
 });
+
+app.get('/driving', function (req, res) {
+  res.sendFile(path.join(__dirname, './mapMatrix.json'));
+});
+
 
 app.listen(port, (err) => {
   if (err) {
